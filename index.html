@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Google</title>
+  <title>Google Clone</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,13 +18,13 @@
 
   <main>
     <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="Google Logo" class="logo" />
-    <div class="search-box">
-      <input type="text" placeholder="Search Google or type a URL" />
+    <form class="search-box" action="https://www.google.com/search" method="GET">
+      <input type="text" name="q" placeholder="Search Google or type a URL" required />
       <div class="buttons">
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
+        <button type="submit">Google Search</button>
+        <button type="submit" name="btnI">I'm Feeling Lucky</button>
       </div>
-    </div>
+    </form>
   </main>
 
   <footer>
