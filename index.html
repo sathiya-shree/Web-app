@@ -12,7 +12,11 @@
       <a href="#">Gmail</a>
       <a href="#">Images</a>
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Google_Apps_icon.svg" alt="Apps" class="app-icon" />
-      <button>Sign in</button>
+      <button class="sign-in-btn">Sign in</button>
+      <label class="switch">
+        <input type="checkbox" id="mode-toggle" />
+        <span class="slider"></span>
+      </label>
     </nav>
   </header>
 
@@ -39,5 +43,14 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('mode-toggle');
+    const body = document.body;
+
+    toggle.addEventListener('change', () => {
+      body.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>
